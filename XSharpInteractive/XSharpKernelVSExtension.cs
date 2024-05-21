@@ -23,7 +23,7 @@ public static class XSharpKernelVSExtension
         // Finally, display some information to the user so they can see how to use the extension.
         view = div(
             code(nameof(XSharpKernelVSExtension)),
-            " has loaded successfully. It support XSharp Core Dialect language scripting. ",
+            " has been loaded successfully. It support XSharp Core Dialect language scripting. ",
             "Try it by running: ",
             code("#!xsharp"),
             "Or by selecting ",
