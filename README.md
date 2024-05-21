@@ -1,4 +1,4 @@
-﻿# XSharp Interactive
+# XSharp Interactive
 
 Experimental XSharp Core dialect Scripting kernel to be use with .Net Polyglot Notebooks.
 
