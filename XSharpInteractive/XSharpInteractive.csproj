@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<IncludeBuildOutput>true</IncludeBuildOutput>
+		<IsPackable>true</IsPackable>
+		<PackageDescription>XSharp extension for .NET Interactive</PackageDescription>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Company>XSharp B.V.</Company>
+		<Description>XSharp Core Scripting Language extension for .NET Interactive</Description>
+		<Copyright>XSharp B.V.</Copyright>
+		<PackageProjectUrl>www.xsharp.eu</PackageProjectUrl>
+		<Title>XSharp Language extension for .NET Interactive</Title>
+		<Authors>Fabrice Foray</Authors>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="bin\**" />
+		<EmbeddedResource Remove="bin\**" />
+		<None Remove="bin\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="microsoft.dotnet.interactive" Version="1.0.0-beta.24229.4" />
+		<PackageReference Include="microsoft.dotnet.interactive.csharp" Version="1.0.0-beta.24229.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="extension.dib" Pack="true" PackagePath="interactive-extensions/dotnet" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="XSharp.CodeAnalysis">
+			<HintPath>C:\Program Files (x86)\XSharp\NetCore31\XSharp.CodeAnalysis.dll</HintPath>
+		</Reference>
+		<Reference Include="XSharp.Scripting">
+			<HintPath>C:\Program Files (x86)\XSharp\NetCore31\XSharp.Scripting.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="IncludeAllFilesInTargetDir" AfterTargets="Build">
+		<ItemGroup>
+			<None Include="$(TargetDir)\*.dll">
+				<Pack>true</Pack>
+				<PackagePath>lib\net8.0</PackagePath>
+			</None>
+		</ItemGroup>
+	</Target>
+
+	<ItemGroup>
+		<Content Include="README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+		<Content Include="LICENCE">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+	</ItemGroup>
+
+</Project>
