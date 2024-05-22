@@ -18,6 +18,8 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/X-Sharp/XSharpInteractive</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageTags>xsharp;polyglot;notebook;jupyter;interactive;dotnet;</PackageTags>
+		<PackageReleaseNotes>First release</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
