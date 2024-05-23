@@ -13,3 +13,9 @@
 将 NuGet 包文件复制到 `C:\XSharpInteractive` 文件夹中(默认路径)。
 
 前往 [XSharp Notebooks](https://github.com/X-Sharp/xsharp-notebooks) 获取更多信息和使用方法。
+
+## 待办事项
+
+- 发布 Nuget 包
+- 通过 XSharp 编译器增加对其他 xBase 方言的支持
+- 增加对 XSharp Runtime assembly 的支持
