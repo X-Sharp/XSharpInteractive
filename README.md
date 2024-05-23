@@ -1,4 +1,4 @@
-# XSharp Interactive
+# XSharp Interactive([简体中文版](README_CN.md))
 
 Experimental XSharp Core dialect Scripting kernel to be use with .Net Polyglot Notebooks.
 
