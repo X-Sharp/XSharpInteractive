@@ -12,6 +12,6 @@ Go to the [XSharp Notebooks](https://github.com/X-Sharp/xsharp-notebooks) reposi
 
 ## Todo
 
-- Publish the Nuget Package
+~~- Publish the Nuget Package~~
 - Add support for other xBase dialects supported by XSharp Compiler
 - Add support for the XSharp Runtime assembly
